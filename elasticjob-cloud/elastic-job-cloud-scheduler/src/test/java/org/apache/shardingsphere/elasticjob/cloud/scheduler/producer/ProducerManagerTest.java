@@ -86,6 +86,7 @@ public final class ProducerManagerTest {
 
     @Before
     public void setUp() throws NoSuchFieldException {
+
         producerManager = new ProducerManager(schedulerDriver, regCenter);
         ReflectionUtils.setFieldValue(producerManager, "appConfigService", appConfigService);
         ReflectionUtils.setFieldValue(producerManager, "configService", configService);
